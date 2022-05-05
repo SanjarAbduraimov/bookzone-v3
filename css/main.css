@@ -2103,9 +2103,9 @@
   color: #bd9b76;
 }
 
-form {
-  text-align: center;
-  margin-top: 13px;
+body {
+  margin: 0;
+  padding: 0;
 }
 
 * {
@@ -2148,87 +2148,15 @@ form {
   display: block;
 }
 
-.author__body {
-  background: #191919;
-  background-image: url(../../img/BG-png/ornament.png);
-  background-position-x: 100%;
-  background-position-y: 100%;
-  background-repeat: no-repeat;
-}
-.author__body .aside .author__img-wrapper .author__img {
-  margin-right: 80px;
-}
-.author__body .aside .author__img-wrapper .author__img img {
-  width: 100%;
-  object-fit: contain;
-}
-.author__body .about__author {
-  width: 75%;
-  margin: 30px 0 40px 70px;
-}
-.author__body .about__author p {
-  font-weight: 300;
-  font-size: 15px;
-  letter-spacing: 1px;
-  margin: 0px;
-  font-family: Helvetican;
-  color: rgba(255, 255, 255, 0.6);
-}
-.author__body .about__author .birth__date,
-.author__body .about__author .death__date,
-.author__body .about__author .arrow__minus {
-  font-family: Rotterburg;
-  color: #C9AC8C;
-  font-weight: 400;
-  font-size: 39px;
-  margin: 13px 0 5px;
-}
-.author__body .author__title-wrapper .author__title {
-  text-transform: uppercase;
-  font-family: Rotterburg;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 53px;
+form {
   text-align: center;
-  margin: 50px 0 0 0;
-  color: #C9AC8C;
+  margin-top: 13px;
 }
-.author__body .author__title-wrapper .author__text {
-  font-style: normal;
-  font-family: Helvetican;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 144.4%;
-  padding: 20px 80px 30px 0;
-  margin: 0;
-  color: rgba(255, 255, 255, 0.8);
-}
-.author__body .author__works-wrapper {
-  flex-direction: row;
-}
-.author__body .author__works-wrapper i {
-  color: #C9AC8C;
-  word-spacing: 9px;
-  display: block;
-}
-.author__body .author__works-wrapper .works__text {
-  font-family: Helvetican;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 154.9%;
-  padding: 5px 250px 0 15px;
-  color: #FFFFFF;
-}
-.author__body .author__books-title {
-  align-items: center;
-  justify-content: space-between;
-  padding: 50px 0 10px 0;
-}
-.author__body .author__books-title .books__title {
-  text-transform: uppercase;
-  font-family: Rotterburg;
+
+.form-title {
+  margin-top: 380px;
+  text-align: center;
+  font-family: "Rotterburg";
   font-style: normal;
   font-weight: 400;
   font-size: 31px;
@@ -2336,6 +2264,93 @@ form {
 #three:checked ~ .tabs #three-tab {
   background: #191919;
   color: #C9AC8C;
+}
+
+.author__body {
+  background: #191919;
+  background-image: url(../../img/BG-png/ornament.png);
+  background-position-x: 100%;
+  background-position-y: 100%;
+  background-repeat: no-repeat;
+}
+.author__body .aside .author__img-wrapper .author__img {
+  margin-right: 80px;
+}
+.author__body .aside .author__img-wrapper .author__img img {
+  width: 100%;
+  object-fit: contain;
+}
+.author__body .about__author {
+  width: 75%;
+  margin: 30px 0 40px 70px;
+}
+.author__body .about__author p {
+  font-weight: 300;
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin: 0px;
+  font-family: Helvetican;
+  color: rgba(255, 255, 255, 0.6);
+}
+.author__body .about__author .birth__date,
+.author__body .about__author .death__date,
+.author__body .about__author .arrow__minus {
+  font-family: Rotterburg;
+  color: #C9AC8C;
+  font-weight: 400;
+  font-size: 39px;
+  margin: 13px 0 5px;
+}
+.author__body .author__title-wrapper .author__title {
+  text-transform: uppercase;
+  font-family: Rotterburg;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 53px;
+  text-align: center;
+  margin: 50px 0 0 0;
+  color: #C9AC8C;
+}
+.author__body .author__title-wrapper .author__text {
+  font-style: normal;
+  font-family: Helvetican;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 144.4%;
+  padding: 20px 80px 30px 0;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.8);
+}
+.author__body .author__works-wrapper {
+  flex-direction: row;
+}
+.author__body .author__works-wrapper i {
+  color: #C9AC8C;
+  word-spacing: 9px;
+  display: block;
+}
+.author__body .author__works-wrapper .works__text {
+  font-family: Helvetican;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 154.9%;
+  padding: 5px 250px 0 15px;
+  color: #FFFFFF;
+}
+.author__body .author__books-title {
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 0 10px 0;
+}
+.author__body .author__books-title .books__title {
+  text-transform: uppercase;
+  font-family: Rotterburg;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 31px;
+  line-height: 34px;
   text-align: center;
   color: #C9AC8C;
 }
@@ -2355,6 +2370,56 @@ form {
 }
 .author__body .author__books-wrapper .card {
   margin-right: 40px;
+}
+
+.book__comment-wrapper {
+  width: 60%;
+}
+
+.about__book .about__texts-wrapper p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  /* identical to box height */
+  font-family: Helvetican;
+  color: rgba(255, 255, 255, 0.6);
+}
+.about__book .about__texts-wrapper span {
+  padding-left: 10px;
+  font-style: normal;
+  font-family: Helvetican;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  /* identical to box height */
+  color: #FFFFFF;
+}
+.about__book .about__book-title {
+  font-family: Rotterburg;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 53px;
+  padding-bottom: 13px;
+  color: #C9AC8C;
+}
+.about__book .about__author-wrapper {
+  align-items: center;
+  margin-bottom: 40px;
+}
+.about__book .about__author-wrapper .about__book-text {
+  font-family: Helvetican;
+  padding-right: 20px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 16px;
+  text-align: center;
+  color: #C9AC8C;
+}
+.about__book .about__author-wrapper .about__book-icon {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 * {
