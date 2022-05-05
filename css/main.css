@@ -2449,7 +2449,7 @@ form.home__search {
 
 .author__body {
   background: #191919;
-  background-image: url(../../img/BG-png/ornament.png);
+  background-image: url(../../assets/images/details/body-bg.png);
   background-position-x: 100%;
   background-position-y: 100%;
   background-repeat: no-repeat;
@@ -2490,13 +2490,44 @@ form.home__search {
   font-size: 48px;
   line-height: 53px;
   text-align: center;
-  margin-top: 13px;
+  margin: 50px 0 0 0;
+  color: #C9AC8C;
 }
-
-.form-title {
-  margin-top: 380px;
-  text-align: center;
-  font-family: "Rotterburg";
+.author__body .author__title-wrapper .author__text {
+  font-style: normal;
+  font-family: Helvetican;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 144.4%;
+  padding: 20px 80px 30px 0;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.8);
+}
+.author__body .author__works-wrapper {
+  flex-direction: row;
+}
+.author__body .author__works-wrapper i {
+  color: #C9AC8C;
+  word-spacing: 9px;
+  display: block;
+}
+.author__body .author__works-wrapper .works__text {
+  font-family: Helvetican;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 154.9%;
+  padding: 5px 250px 0 15px;
+  color: #FFFFFF;
+}
+.author__body .author__books-title {
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 0 10px 0;
+}
+.author__body .author__books-title .books__title {
+  text-transform: uppercase;
+  font-family: Rotterburg;
   font-style: normal;
   font-weight: 400;
   font-size: 31px;
@@ -2522,33 +2553,113 @@ form.home__search {
   margin-right: 40px;
 }
 
-.book__comment-wrapper {
-  width: 60%;
+.book__body {
+  background: #191919;
+  background-image: url(../../assets/images/details/body-bg.png);
+  background-position-x: 100%;
+  background-position-y: 20%;
+  background-repeat: no-repeat;
+  padding: 50px 0 0 80px;
 }
 
 .about__book .about__texts-wrapper p {
   font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 20px;
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 30px;
   /* identical to box height */
   font-family: Helvetican;
   color: rgba(255, 255, 255, 0.6);
+}
+.about__book .about__texts-wrapper .alone__text {
+  align-items: center;
+  padding: 45px 0;
+}
+.about__book .about__texts-wrapper .alone__text p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  padding-right: 10px;
+  color: #C9AC8C;
+}
+.about__book .about__texts-wrapper .alone__text i {
+  color: #C4C4C4;
 }
 .about__book .about__texts-wrapper span {
   padding-left: 10px;
   font-style: normal;
   font-family: Helvetican;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 20px;
+  font-weight: 200;
+  font-size: 19px;
+  line-height: 30px;
   /* identical to box height */
+  color: #FFFFFF;
+}
+.about__book .book__description-wrapper p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 144.4%;
+  width: 85%;
+  color: rgba(255, 255, 255, 0.8);
+}
+.about__book .about__format-text {
+  font-style: normal;
+  padding: 45px 0 30px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  font-family: Helvetican;
+  color: #C9AC8C;
+}
+.about__book .about__format-wrapper {
+  align-items: center;
+}
+.about__book .about__format-wrapper .format__icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about__book .about__format-wrapper .format__btn-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.about__book .about__format-wrapper .format__btn-wrapper button {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 15px 30px;
+  background: #C9AC8C;
+  border: none;
+  color: #3C2710;
+  cursor: pointer;
+}
+.about__book .about__format-wrapper p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  padding-right: 10px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.about__book .about__format-wrapper i {
+  color: #C4C4C4;
+  cursor: pointer;
+}
+.about__book .about__format-wrapper span {
+  font-style: normal;
+  font-family: Helvetican;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 30px;
   color: #FFFFFF;
 }
 .about__book .about__book-title {
   font-family: Rotterburg;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 200;
   font-size: 48px;
   line-height: 53px;
   padding-bottom: 13px;
@@ -2570,6 +2681,74 @@ form.home__search {
 }
 .about__book .about__author-wrapper .about__book-icon {
   color: rgba(255, 255, 255, 0.6);
+}
+
+.tab__wrapper .book__comment-wrapper {
+  width: 50%;
+}
+.tab__wrapper .comment__card-wrapperfirst {
+  background: linear-gradient(263.94deg, #161616 0%, #1E1E1E 98.06%);
+  background-image: url(../../assets/images/details/detail-card-bg.png);
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  border-radius: 15px;
+  margin-right: 20px;
+  padding: 0 0 0 30px;
+  display: flex;
+  align-items: center;
+  height: 230px;
+}
+.tab__wrapper .comment__card-wrapperfirst .comment__text {
+  width: 70%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+.tab__wrapper .comment__card-wrappersecond {
+  background: linear-gradient(263.94deg, #161616 0%, #1E1E1E 98.06%);
+  background-repeat: no-repeat;
+  background-position-x: 110%;
+  border-radius: 15px;
+  padding: 0 0 0 30px;
+  display: flex;
+  align-items: center;
+  height: 230px;
+}
+.tab__wrapper .comment__card-wrappersecond .comment__text {
+  width: 70%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.comment__about-wrapper {
+  margin: 60px 0 60px 20px;
+}
+.comment__about-wrapper .comment__suggest {
+  font-family: Helvetican;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 25px;
+  color: #C9AC8C;
+}
+.comment__about-wrapper .comment__link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+.comment__about-wrapper .comment__link:hover {
+  text-decoration: underline;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.book__card-wrapper {
+  padding-left: 20px;
 }
 
 * {
