@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -70,7 +70,7 @@
           </div>
         </div>
         <div class="col-md-6 profile-circle-img">
-          <!-- <img src="./assets/images/profile/profile-circle.png" alt="" /> -->
+          <img src="./img/profile/profile-circle.png" alt="" />
         </div>
       </div>
     </header>
@@ -85,7 +85,7 @@
           <div class="row profile-book-row">
             <div class="card">
               <a href="book.html">
-                <!-- <img src="./assets/images/book.png" alt="Avatar" /> -->
+                <img src="./img/book.png" alt="Avatar" />
               </a>
               <div class="card-body pt-2">
                 <a href="books.html" class="card-title">dunyoning ishlari</a>
@@ -98,7 +98,7 @@
             </div>
             <div class="card">
               <a href="book.html">
-                <!-- <img src="./assets/images/book.png" alt="Avatar" /> -->
+                <img src="./img/book.png" alt="Avatar" />
               </a>
               <div class="card-body pt-2">
                 <a href="books.html" class="card-title">dunyoning ishlari</a>
@@ -275,7 +275,37 @@
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/router.js"></script>
+    <script>
+      function previewFileUploadImg() {
+        let preview = document.querySelector(".profile-img");
+        let file = document.querySelector("#upload-profile-photo").files[0];
+        let reader = new FileReader();
+        reader.onloadend = function () {
+          preview.src = reader.result;
+        };
 
+        if (file) {
+          reader.readAsDataURL(file);
+        } else {
+          preview.src = "";
+        }
+      }
+
+      function previewFileAddBook() {
+        let preview = document.querySelector(".upload-img");
+        let file = document.querySelector("input[type=file]").files[0];
+        let reader = new FileReader();
+        reader.onloadend = function () {
+          preview.src = reader.result;
+        };
+
+        if (file) {
+          reader.readAsDataURL(file);
+        } else {
+          preview.src = "";
+        }
+      }
+    </script>
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>
       window.ga = function () {
